@@ -12,8 +12,6 @@ import { breadcrumb } from "sami-breadcrumb";
 
 import response from "utils/response";
 
-//import confirmDialog from "utils/confirmDialog";
-
 import { confirmPopup } from "sami-confirm-popup";
 
 import { amountBadge, createdDateBadge } from "utils/badgeTemplate";
@@ -131,6 +129,8 @@ const Table = () => {
         filter: true,
         filterField: "initiative.id",
         filterType: "select",
+        editable: true,
+        editorType: "InputText",
         filterElementOptions: {
           type: "Dropdown",
           value: "organization"
@@ -238,7 +238,7 @@ const Table = () => {
       ]
     },
 
-    editable: false
+    editable: true
   }), []);
 
   return (

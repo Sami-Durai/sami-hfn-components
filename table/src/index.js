@@ -21,6 +21,8 @@ import { DataViewLayoutOptions } from "primereact/dataview";
 
 import { ContextMenu } from 'primereact/contextmenu';
 
+import { InputText } from "primereact/inputtext";
+
 // shared-components
 import HFNDatatableToolbar from "./HFNDatatableToolbar";
 
@@ -392,12 +394,13 @@ class HFNDataTable extends React.PureComponent {
     }
   }
 
-  editorTemplate = (options, column) => {
-    switch (column.editorType) {
+  editorTemplate = (options) => {
+    let fieldValue = this.lookup(options.rowData, options.field);
+    switch (options.editorType) {
       case "InputText":
-        return <InputText type="text" value={options.value} onChange={(e) => options.editorCallback(e.target.value)} />;
+        return <InputText type="text" value={fieldValue || ""} onChange={(e) => options.editorCallback(e.target.value)} />;
       default:
-        return <InputText type="text" value={options.value} onChange={(e) => options.editorCallback(e.target.value)} />;
+        return <InputText type="text" value={fieldValue || ""} onChange={(e) => editorCallback(e.target.value)} />;
     };
   }
 
@@ -445,11 +448,12 @@ class HFNDataTable extends React.PureComponent {
 
     if (this.editable) {
       dataTableConfigs.editMode = "row";
+      dataTableConfigs.dataKey="id"
       dataTableConfigs.editingRows = this.state.editingRows;
       dataTableConfigs.onRowEditChange = this.onRowEditChange;
       dataTableConfigs.onRowEditComplete = this.onRowEditComplete;
     }
-
+    
     return (
       <div className={`hfn-datatable ${this.state.tablePrimeConfig.lazy ? "hfn-datatable-lazy" : ""}`}>
 
@@ -508,7 +512,7 @@ class HFNDataTable extends React.PureComponent {
             }
 
             if (this.editable && item.editable) {
-              item.editor = (options) => this.editorTemplate(options, item);
+              item.editor = (options) => this.editorTemplate(options);
             }
 
             if (item.filterElementOptions) {
