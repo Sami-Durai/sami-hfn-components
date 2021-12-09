@@ -1,12 +1,13 @@
 {
-  "name": "sami-toast",
-  "version": "1.2.7",
+  "name": "sami-modal",
+  "version": "1.3.0",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "scripts": {
-    "build": "rollup -c"
+    "build": "npm i sami-redux@latest && rollup -c",
+    "i": "npm i react@latest react-dom@latest redux@latest react-redux@latest react-transition-group@latest sami-redux@latest"
   },
-  "author": "Sami Durai",
+  "author": "Sami-Durai",
   "license": "MIT",
   "devDependencies": {
     "@babel/preset-react": "^7.16.0",
@@ -19,6 +20,6 @@
     "redux": "^4.1.2",
     "rollup": "^2.60.0",
     "rollup-plugin-terser": "^7.0.2",
-    "sami-redux": "^1.0.0"
+    "sami-redux": "^1.0.7"
   }
 }

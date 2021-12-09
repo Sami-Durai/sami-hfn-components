@@ -1,10 +1,11 @@
 {
-  "name": "sami-toast",
-  "version": "1.2.7",
+  "name": "sami-sidebar",
+  "version": "1.0.8",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "i": "npm i sami-redux@latest react@latest react-dom@latest react-redux@latest react-transition-group@latest redux@latest"
   },
   "author": "Sami Durai",
   "license": "MIT",
@@ -19,6 +20,6 @@
     "redux": "^4.1.2",
     "rollup": "^2.60.0",
     "rollup-plugin-terser": "^7.0.2",
-    "sami-redux": "^1.0.0"
+    "sami-redux": "^1.0.11"
   }
 }

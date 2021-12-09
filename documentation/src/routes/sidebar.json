@@ -1,0 +1,26 @@
+[
+  {
+    "url": "breadcrumb",
+    "label": "Breadcrumb"
+  },
+  {
+    "url": "confirm-popup",
+    "label": "Confirm Popup"
+  },
+  {
+    "url": "modal",
+    "label": "Modal"
+  },
+  {
+    "url": "toast",
+    "label": "Toast"
+  },
+  {
+    "url": "table",
+    "label": "Table"
+  },
+  {
+    "url": "reports",
+    "label": "Report Table"
+  }
+]

@@ -1,6 +1,6 @@
 {
-  "name": "sami-toast",
-  "version": "1.2.7",
+  "name": "sami-breadcrumb",
+  "version": "1.0.4",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "scripts": {
@@ -19,6 +19,7 @@
     "redux": "^4.1.2",
     "rollup": "^2.60.0",
     "rollup-plugin-terser": "^7.0.2",
-    "sami-redux": "^1.0.0"
+    "sami-redux": "^1.0.1",
+    "react-router-dom": "^6.0.2"
   }
 }
