@@ -12,6 +12,8 @@ import * as breadcrumb     from "./actionTypes/breadcrumb";
 import * as confirmPopup   from "./actionTypes/confirmPopup";
 import * as sidebar        from "./actionTypes/sidebar";
 
+import "./styles/index.scss";
+
 const store = createStore(rootReducer);
 
 const HFNContext = React.createContext();

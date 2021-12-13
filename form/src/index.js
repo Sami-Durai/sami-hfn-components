@@ -436,7 +436,6 @@ const HFNDynamicForm = ({ initialValues, fields, onFormSubmit, submitButtonGroup
                                 name={name}
                                 {...primeFieldProps}
                                 onTextChange={(e) => {
-                                  console.log(e)
                                   onChange(e.htmlValue);
                                   if (primeFieldProps && primeFieldProps.onChange && typeof primeFieldProps.onChange === "function") {
                                     primeFieldProps.onChange(e.htmlValue, e, setValue, isSubmitted);
