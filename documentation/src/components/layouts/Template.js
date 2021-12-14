@@ -9,7 +9,7 @@ import Header from "components/layouts/Header";
 
 import Footer from "components/layouts/Footer";
 
-import HFNBreadCrumb from "sami-breadcrumb";
+import HFNBreadcrumb from "sami-breadcrumb";
 
 // components
 import HFNSideBar from "sami-sidebar";
@@ -31,6 +31,7 @@ const Breadcrumb = lazy("breadcrumb", lazyDelay);
 const ConfirmPopup = lazy("confirmPopup", lazyDelay);
 const Toast = lazy("toast", lazyDelay);
 const Modal = lazy("modal", lazyDelay);
+const SideBar = lazy("sidebar", lazyDelay);
 const Table = lazy("table", lazyDelay);
 const Reports = lazy("reports", lazyDelay);
 
@@ -51,7 +52,7 @@ const DashboardContainer = () => {
           <div className="main-container">
 
             <div className="breadcrums-section">
-              <HFNBreadCrumb />
+              <HFNBreadcrumb />
             </div>
 
             <HFNLoader>
@@ -60,6 +61,7 @@ const DashboardContainer = () => {
                 <Route path="/confirm-popup" element={<ConfirmPopup />} />
                 <Route path="/toast" element={<Toast />} />
                 <Route path="/modal" element={<Modal />} />
+                <Route path="/sidebar" element={<SideBar />} />
                 <Route path="/table" element={<Table />} />
                 <Route path="/reports" element={<Reports />} />
                 <Route path="*" element={null} />

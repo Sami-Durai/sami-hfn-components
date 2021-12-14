@@ -238,7 +238,7 @@ const Table = () => {
       ]
     },
 
-    editable: true
+    editable: false
   }), []);
 
   return (

@@ -14,8 +14,8 @@ const Documentation = () => {
         </div>
         <div className="p-mb-2">Use methods from <strong>toast </strong>object for toast messages</div>
         <div className="p-mb-4">
-          <span style={{ color: "rgb(197, 134, 192)" }}>import</span> {" "}
-          <span style={{ color: "rgb(156, 220, 254)" }}>toaster</span>{" "}
+          <span style={{ color: "rgb(197, 134, 192)" }}>import</span> {" { "}
+          <span style={{ color: "rgb(156, 220, 254)" }}>toaster</span>{" } "}
           <span style={{ color: "rgb(197, 134, 192)" }}>from</span> {" "}
           <span style={{ color: "rgb(206, 145, 120)" }}>&quot;sami-toast&quot;</span>;
         </div>

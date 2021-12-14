@@ -75,7 +75,7 @@ const HFNSideBar = ({ id, style, className, position, visible, logo, text, menu,
                           expanded ?
                             <i className="menu-icon pi pi-angle-up"></i>
                             :
-                            <i className="menu-icon pi pi-angle-false"></i>
+                            <i className="menu-icon pi pi-angle-down"></i>
                         }
                       </div>
                       : null}

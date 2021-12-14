@@ -14,7 +14,7 @@ import { breadcrumb } from "sami-breadcrumb";
 // constants
 const breadcrumbs = [
   { label: "Home", url: "" },
-  { label: "Breadcrumb", url: "breadcrumb" }
+  { label: "Side Bar", url: "sidebar" }
 ];
 
 class Breadcrumb extends Component {
