@@ -29,10 +29,11 @@ const lazyDelay = 500;
 // lazy components 
 const Breadcrumb = lazy("breadcrumb", lazyDelay);
 const ConfirmPopup = lazy("confirmPopup", lazyDelay);
-const Toast = lazy("toast", lazyDelay);
+const Form = lazy("form", lazyDelay);
 const Modal = lazy("modal", lazyDelay);
 const SideBar = lazy("sidebar", lazyDelay);
 const Table = lazy("table", lazyDelay);
+const Toast = lazy("toast", lazyDelay);
 const Reports = lazy("reports", lazyDelay);
 
 const DashboardContainer = () => {
@@ -59,10 +60,11 @@ const DashboardContainer = () => {
               <Routes>
                 <Route path="/breadcrumb" element={<Breadcrumb />} />
                 <Route path="/confirm-popup" element={<ConfirmPopup />} />
-                <Route path="/toast" element={<Toast />} />
                 <Route path="/modal" element={<Modal />} />
+                <Route path="/form" element={<Form />} />
                 <Route path="/sidebar" element={<SideBar />} />
                 <Route path="/table" element={<Table />} />
+                <Route path="/toast" element={<Toast />} />
                 <Route path="/reports" element={<Reports />} />
                 <Route path="*" element={null} />
               </Routes>

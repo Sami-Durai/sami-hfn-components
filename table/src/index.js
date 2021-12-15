@@ -43,9 +43,8 @@ class HFNDataTable extends React.PureComponent {
     super(props);
 
     const {
-      privilege,
       tablePrimeConfig,
-      url,
+      service,
       method,
       urlPath,
       params,
@@ -79,14 +78,12 @@ class HFNDataTable extends React.PureComponent {
 
     this.state = {
 
-      privilege: privilege,
-
       tablePrimeConfig: {
         ...tablePrimeConfig,
         className: responsive ? (tablePrimeConfig.className || "") + " responsive-datatable" : (tablePrimeConfig.className || "")
       },
 
-      url: url,
+      service: service,
 
       method: method,
 
@@ -144,9 +141,9 @@ class HFNDataTable extends React.PureComponent {
     this.setState({ loading: true });
 
     try {
-      if (this.state.url && this.state.method) {
+      if (this.state.service && this.state.method) {
 
-        let tableResponse = await this.state.url[this.state.method]({ lazyEvent: this.state.lazyParams, ...this.state.params }, this.state.urlPath)
+        let tableResponse = await this.state.service[this.state.method]({ lazyEvent: this.state.lazyParams, ...this.state.params }, this.state.urlPath)
 
         if (tableResponse && tableResponse.data && !tableResponse.data.isError && Array.isArray(tableResponse.data.results)) {
           this.setState({
@@ -465,7 +462,6 @@ class HFNDataTable extends React.PureComponent {
           selections={this.state.selections}
           tableItems={this.state.data}
           toolBarOptions={this.state.toolBarBtnOptions}
-          access={this.state.privilege}
           enableCardsView={this.state.enableCardsView}
           layout={this.state.layout}
           handleTableState={this.handleTableState}

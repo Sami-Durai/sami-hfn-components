@@ -11,7 +11,7 @@ const Header = () => {
       <i className="uil uil-bars"></i>
     </div>
       <div className="header-text p-d-flex p-text-center p-jc-center">
-        <h3> Heartfulness Dynamic Components </h3>
+        <h3> Heartfulness React Components </h3>
       </div>
     </nav>
   );

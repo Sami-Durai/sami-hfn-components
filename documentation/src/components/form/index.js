@@ -14,10 +14,10 @@ import { breadcrumb } from "sami-breadcrumb";
 // constants
 const breadcrumbs = [
   { label: "Home", url: "" },
-  { label: "Modal", url: "modal" }
+  { label: "Form", url: "form" }
 ];
 
-class Modal extends Component {
+class Form extends Component {
   constructor(props) {
     super(props);
 
@@ -47,4 +47,4 @@ class Modal extends Component {
   }
 }
 
-export default Modal;
+export default Form;

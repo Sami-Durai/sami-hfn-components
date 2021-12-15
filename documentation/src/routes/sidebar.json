@@ -8,6 +8,10 @@
     "label": "Confirm Popup"
   },
   {
+    "url": "form",
+    "label": "Form"
+  },
+  {
     "url": "modal",
     "label": "Modal"
   },
@@ -16,12 +20,12 @@
     "label": "Side Bar"
   },
   {
-    "url": "toast",
-    "label": "Toast"
-  },
-  {
     "url": "table",
     "label": "Table"
+  },
+  {
+    "url": "toast",
+    "label": "Toast"
   },
   {
     "url": "reports",
