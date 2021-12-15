@@ -39,7 +39,29 @@ const Documentation = () => {
             <div className="p-ml-4 p-text-bold"> 11.contextMenu:</div>
             <div className="p-ml-6"> Context menu items.</div>
             <div className="p-ml-4 p-text-bold"> 12.columns:</div>
-            <div className="p-ml-6"> Array of table column objects.</div>
+            <div className="p-ml-6 p-mb-2"> Array of table column objects.</div>
+            <div className="p-ml-6">
+              <div className="p-text-bold"> 12.1 body:</div>
+              <div className="p-ml-2"> Custom template for table cell element.</div>
+              <div className="p-text-bold"> 12.2 transformValue:</div>
+              <div className="p-ml-2"> Transforms first letter of a string to upper case. Default value is true.</div>
+              <div className="p-text-bold"> 12.3 showOriginalValue:</div>
+              <div className="p-ml-2"> Disables default custom template for table cell element. Default value is false.</div>
+              <div className="p-text-bold"> 12.4 filterElementOptions:</div>
+              <div className="p-ml-2"> An object of custom filter element options.</div>
+              <div className="p-ml-2 p-mt-2">
+                <div className="p-text-bold"> 12.4.1 value:</div>
+                <div className="p-ml-2"> Array property name of dropdown options in dropdown reducer in redux store.</div>
+                <div className="p-text-bold"> 12.4.2 type:</div>
+                <div className="p-ml-2"> Type of custom filter component. Available values are Dropdown, Calendar, AutoComplete, CityAutoComplete, StateAutoComplete and CountryAutoComplete.</div>
+                <div className="p-text-bold"> 12.4.3 primeFieldProps:</div>
+                <div className="p-ml-2"> Filter component props.</div>
+                <div className="p-text-bold"> 12.4.4 service:</div>
+                <div className="p-ml-2"> Service object containing API request functions for AutoComplete component.</div>
+                <div className="p-text-bold"> 12.4.5 method:</div>
+                <div className="p-ml-2"> API request function name in service object for AutoComplete component.</div>
+              </div>
+            </div>
             <div className="p-ml-4 p-text-bold"> 13.pagination:</div>
             <div className="p-ml-6"> Custom table pagination options.</div>
             <div className="p-ml-4 p-text-bold"> 14.enableActionColumn:</div>
